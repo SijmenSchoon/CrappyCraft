@@ -10,6 +10,7 @@ namespace Networking
             // Handshaking
             CS_HANDSHAKE                            = 0x00,
 
+
             // Play, server->client
             SC_PLAY_KEEP_ALIVE                      = 0x00,
             SC_PLAY_JOIN_GAME                       = 0x01,
@@ -102,6 +103,7 @@ namespace Networking
             CS_PLAY_CLIENT_SETTINGS                 = 0x15,
             CS_PLAY_CLIENT_STATUS                   = 0x16,
             CS_PLAY_PLUGIN_MESSAGE                  = 0x17,
+
 
             // Status server->client
             SC_STATUS_RESPONSE                      = 0x00,
