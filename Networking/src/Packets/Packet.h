@@ -4,18 +4,21 @@
 #include <boost/asio/streambuf.hpp>
 #include "PacketType.h"
 
-namespace Networking::Packets
+namespace Networking
 {
-    class Packet
+    namespace Packets
     {
-    public:
-        Packet();
-        Packet(PacketType type);
-        Packet(boost::asio::streambuf buffer)
-        ~Packet();
+        class Packet
+        {
+        public:
+            Packet();
+            Packet(PacketType type);
+            Packet(boost::asio::streambuf buffer)
+            ~Packet();
 
-        PacketType mType;
-    };
+            PacketType mType;
+        };
+    }
 }
 
 #endif
