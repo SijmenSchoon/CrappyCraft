@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CHAT_MESSAGE_H
-#define 
+#define CS_PLAY_CHAT_MESSAGE_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_ENTITY_LOOK_H
-#define 
+#define SC_PLAY_ENTITY_LOOK_H
 
 #include Packet.h
 

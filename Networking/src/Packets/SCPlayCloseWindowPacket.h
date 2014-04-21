@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_CLOSE_WINDOW_H
-#define 
+#define SC_PLAY_CLOSE_WINDOW_H
 
 #include Packet.h
 

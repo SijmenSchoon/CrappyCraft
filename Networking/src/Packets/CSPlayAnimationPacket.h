@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_ANIMATION_H
-#define 
+#define CS_PLAY_ANIMATION_H
 
 #include Packet.h
 

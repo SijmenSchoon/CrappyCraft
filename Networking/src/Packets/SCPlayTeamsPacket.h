@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_TEAMS_H
-#define 
+#define SC_PLAY_TEAMS_H
 
 #include Packet.h
 

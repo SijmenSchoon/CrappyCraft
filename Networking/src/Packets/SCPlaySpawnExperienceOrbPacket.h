@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SPAWN_EXPERIENCE_ORB_H
-#define 
+#define SC_PLAY_SPAWN_EXPERIENCE_ORB_H
 
 #include Packet.h
 

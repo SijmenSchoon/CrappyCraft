@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CREATIVE_INVENTORY_ACTION_H
-#define 
+#define CS_PLAY_CREATIVE_INVENTORY_ACTION_H
 
 #include Packet.h
 

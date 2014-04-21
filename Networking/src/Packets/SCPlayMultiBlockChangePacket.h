@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_MULTI_BLOCK_CHANGE_H
-#define 
+#define SC_PLAY_MULTI_BLOCK_CHANGE_H
 
 #include Packet.h
 

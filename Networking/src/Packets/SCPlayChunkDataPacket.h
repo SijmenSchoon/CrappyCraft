@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_CHUNK_DATA_H
-#define 
+#define SC_PLAY_CHUNK_DATA_H
 
 #include Packet.h
 

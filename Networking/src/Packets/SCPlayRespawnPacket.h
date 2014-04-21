@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_RESPAWN_H
-#define 
+#define SC_PLAY_RESPAWN_H
 
 #include Packet.h
 

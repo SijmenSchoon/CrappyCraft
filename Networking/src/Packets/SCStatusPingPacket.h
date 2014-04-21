@@ -1,6 +1,5 @@
-
 #ifndef SC_STATUS_PING_H
-#define 
+#define SC_STATUS_PING_H
 
 #include Packet.h
 

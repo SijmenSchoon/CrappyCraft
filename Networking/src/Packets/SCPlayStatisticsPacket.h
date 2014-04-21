@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_STATISTICS_H
-#define 
+#define SC_PLAY_STATISTICS_H
 
 #include Packet.h
 

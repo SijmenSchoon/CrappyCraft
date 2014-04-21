@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_TIME_UPDATE_H
-#define 
+#define SC_PLAY_TIME_UPDATE_H
 
 #include Packet.h
 

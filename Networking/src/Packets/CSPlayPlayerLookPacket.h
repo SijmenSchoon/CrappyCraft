@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLAYER_LOOK_H
-#define 
+#define CS_PLAY_PLAYER_LOOK_H
 
 #include Packet.h
 

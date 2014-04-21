@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_COLLECT_ITEM_H
-#define 
+#define SC_PLAY_COLLECT_ITEM_H
 
 #include Packet.h
 

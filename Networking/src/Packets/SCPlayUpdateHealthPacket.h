@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_UPDATE_HEALTH_H
-#define 
+#define SC_PLAY_UPDATE_HEALTH_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_CHANGE_GAME_STATE_H
-#define 
+#define SC_PLAY_CHANGE_GAME_STATE_H
 
 #include Packet.h
 

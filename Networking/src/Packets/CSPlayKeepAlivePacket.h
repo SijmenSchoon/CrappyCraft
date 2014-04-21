@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_KEEP_ALIVE_H
-#define 
+#define CS_PLAY_KEEP_ALIVE_H
 
 #include Packet.h
 

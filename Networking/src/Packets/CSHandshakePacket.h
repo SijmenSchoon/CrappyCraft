@@ -1,6 +1,5 @@
-
 #ifndef CS_HANDSHAKE_H
-#define 
+#define CS_HANDSHAKE_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_STATUS_RESPONSE_H
-#define 
+#define SC_STATUS_RESPONSE_H
 
 #include Packet.h
 

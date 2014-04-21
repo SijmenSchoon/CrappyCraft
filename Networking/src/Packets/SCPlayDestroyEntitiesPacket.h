@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_DESTROY_ENTITIES_H
-#define 
+#define SC_PLAY_DESTROY_ENTITIES_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_JOIN_GAME_H
-#define 
+#define SC_PLAY_JOIN_GAME_H
 
 #include Packet.h
 

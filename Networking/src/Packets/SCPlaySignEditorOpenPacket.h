@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SIGN_EDITOR_OPEN_H
-#define 
+#define SC_PLAY_SIGN_EDITOR_OPEN_H
 
 #include Packet.h
 

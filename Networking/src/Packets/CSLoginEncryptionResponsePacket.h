@@ -1,6 +1,5 @@
-
 #ifndef CS_LOGIN_ENCRYPTION_RESPONSE_H
-#define 
+#define CS_LOGIN_ENCRYPTION_RESPONSE_H
 
 #include Packet.h
 

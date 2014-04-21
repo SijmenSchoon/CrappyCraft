@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_ENTITY_RELATIVE_MOVE_H
-#define 
+#define SC_PLAY_ENTITY_RELATIVE_MOVE_H
 
 #include Packet.h
 

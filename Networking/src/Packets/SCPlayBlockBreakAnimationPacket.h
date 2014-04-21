@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_BLOCK_BREAK_ANIMATION_H
-#define 
+#define SC_PLAY_BLOCK_BREAK_ANIMATION_H
 
 #include Packet.h
 

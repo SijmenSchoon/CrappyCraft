@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_WINDOW_ITEMS_H
-#define 
+#define SC_PLAY_WINDOW_ITEMS_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SPAWN_POSITION_H
-#define 
+#define SC_PLAY_SPAWN_POSITION_H
 
 #include Packet.h
 

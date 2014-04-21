@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_UPDATE_SIGN_H
-#define 
+#define CS_PLAY_UPDATE_SIGN_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_LOGIN_ENCRYPTION_REQUEST_H
-#define 
+#define SC_LOGIN_ENCRYPTION_REQUEST_H
 
 #include Packet.h
 

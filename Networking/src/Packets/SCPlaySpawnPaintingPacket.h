@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SPAWN_PAINTING_H
-#define 
+#define SC_PLAY_SPAWN_PAINTING_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_USE_BED_H
-#define 
+#define SC_PLAY_USE_BED_H
 
 #include Packet.h
 

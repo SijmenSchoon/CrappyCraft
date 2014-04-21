@@ -1,6 +1,5 @@
-
 #ifndef SC_LOGIN_DISCONNECT_H
-#define 
+#define SC_LOGIN_DISCONNECT_H
 
 #include Packet.h
 

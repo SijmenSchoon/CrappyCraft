@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_ENCHANT_ITEM_H
-#define 
+#define CS_PLAY_ENCHANT_ITEM_H
 
 #include Packet.h
 

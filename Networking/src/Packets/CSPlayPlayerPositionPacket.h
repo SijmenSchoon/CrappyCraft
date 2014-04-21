@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLAYER_POSITION_H
-#define 
+#define CS_PLAY_PLAYER_POSITION_H
 
 #include Packet.h
 

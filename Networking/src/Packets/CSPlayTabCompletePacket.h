@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_TAB_COMPLETE_H
-#define 
+#define CS_PLAY_TAB_COMPLETE_H
 
 #include Packet.h
 

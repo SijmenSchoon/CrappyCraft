@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_PARTICLE_H
-#define 
+#define SC_PLAY_PARTICLE_H
 
 #include Packet.h
 

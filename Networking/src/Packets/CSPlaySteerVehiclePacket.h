@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_STEER_VEHICLE_H
-#define 
+#define CS_PLAY_STEER_VEHICLE_H
 
 #include Packet.h
 

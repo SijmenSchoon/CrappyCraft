@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_ENTITY_TELEPORT_H
-#define 
+#define SC_PLAY_ENTITY_TELEPORT_H
 
 #include Packet.h
 

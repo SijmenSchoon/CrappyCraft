@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SPAWN_OBJECT_H
-#define 
+#define SC_PLAY_SPAWN_OBJECT_H
 
 #include Packet.h
 

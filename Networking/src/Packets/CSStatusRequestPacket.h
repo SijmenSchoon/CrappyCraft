@@ -1,6 +1,5 @@
-
 #ifndef CS_STATUS_REQUEST_H
-#define 
+#define CS_STATUS_REQUEST_H
 
 #include Packet.h
 

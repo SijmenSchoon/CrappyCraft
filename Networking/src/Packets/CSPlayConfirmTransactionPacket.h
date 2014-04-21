@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CONFIRM_TRANSACTION_H
-#define 
+#define CS_PLAY_CONFIRM_TRANSACTION_H
 
 #include Packet.h
 

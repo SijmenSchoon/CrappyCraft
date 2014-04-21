@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CLIENT_SETTINGS_H
-#define 
+#define CS_PLAY_CLIENT_SETTINGS_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_WINDOW_PROPERTY_H
-#define 
+#define SC_PLAY_WINDOW_PROPERTY_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CLICK_WINDOW_H
-#define 
+#define CS_PLAY_CLICK_WINDOW_H
 
 #include Packet.h
 

@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLUGIN_MESSAGE_H
-#define 
+#define CS_PLAY_PLUGIN_MESSAGE_H
 
 #include Packet.h
 

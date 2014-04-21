@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLAYER_ABILITIES_H
-#define 
+#define CS_PLAY_PLAYER_ABILITIES_H
 
 #include Packet.h
 

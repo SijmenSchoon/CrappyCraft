@@ -1,6 +1,5 @@
-
 #ifndef SC_LOGIN_SUCCESS_H
-#define 
+#define SC_LOGIN_SUCCESS_H
 
 #include Packet.h
 

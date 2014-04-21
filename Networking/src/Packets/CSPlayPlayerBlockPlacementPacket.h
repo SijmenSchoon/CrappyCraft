@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLAYER_BLOCK_PLACEMENT_H
-#define 
+#define CS_PLAY_PLAYER_BLOCK_PLACEMENT_H
 
 #include Packet.h
 

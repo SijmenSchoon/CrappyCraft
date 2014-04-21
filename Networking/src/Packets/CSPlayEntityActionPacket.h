@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_ENTITY_ACTION_H
-#define 
+#define CS_PLAY_ENTITY_ACTION_H
 
 #include Packet.h
 

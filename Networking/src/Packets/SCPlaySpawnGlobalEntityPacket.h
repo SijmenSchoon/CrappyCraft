@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SPAWN_GLOBAL_ENTITY_H
-#define 
+#define SC_PLAY_SPAWN_GLOBAL_ENTITY_H
 
 #include Packet.h
 

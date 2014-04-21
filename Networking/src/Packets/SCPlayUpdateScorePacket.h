@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_UPDATE_SCORE_H
-#define 
+#define SC_PLAY_UPDATE_SCORE_H
 
 #include Packet.h
 

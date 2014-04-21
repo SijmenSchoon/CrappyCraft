@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_PLAYER_DIGGING_H
-#define 
+#define CS_PLAY_PLAYER_DIGGING_H
 
 #include Packet.h
 

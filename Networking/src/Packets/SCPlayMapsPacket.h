@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_MAPS_H
-#define 
+#define SC_PLAY_MAPS_H
 
 #include Packet.h
 

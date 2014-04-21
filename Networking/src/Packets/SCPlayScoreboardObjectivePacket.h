@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SCOREBOARD_OBJECTIVE_H
-#define 
+#define SC_PLAY_SCOREBOARD_OBJECTIVE_H
 
 #include Packet.h
 

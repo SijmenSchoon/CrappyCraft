@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_KEEP_ALIVE_H
-#define 
+#define SC_PLAY_KEEP_ALIVE_H
 
 #include Packet.h
 

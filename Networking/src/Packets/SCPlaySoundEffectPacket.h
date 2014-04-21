@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SOUND_EFFECT_H
-#define 
+#define SC_PLAY_SOUND_EFFECT_H
 
 #include Packet.h
 

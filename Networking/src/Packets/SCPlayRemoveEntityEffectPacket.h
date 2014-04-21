@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_REMOVE_ENTITY_EFFECT_H
-#define 
+#define SC_PLAY_REMOVE_ENTITY_EFFECT_H
 
 #include Packet.h
 

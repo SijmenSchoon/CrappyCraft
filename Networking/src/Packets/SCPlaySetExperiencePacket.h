@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SET_EXPERIENCE_H
-#define 
+#define SC_PLAY_SET_EXPERIENCE_H
 
 #include Packet.h
 

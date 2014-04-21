@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_HELD_ITEM_CHANGE_H
-#define 
+#define CS_PLAY_HELD_ITEM_CHANGE_H
 
 #include Packet.h
 

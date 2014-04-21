@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_SET_SLOT_H
-#define 
+#define SC_PLAY_SET_SLOT_H
 
 #include Packet.h
 

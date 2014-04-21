@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_DISCONNECT_H
-#define 
+#define SC_PLAY_DISCONNECT_H
 
 #include Packet.h
 

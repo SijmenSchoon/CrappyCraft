@@ -1,6 +1,5 @@
-
 #ifndef CS_LOGIN_START_H
-#define 
+#define CS_LOGIN_START_H
 
 #include Packet.h
 

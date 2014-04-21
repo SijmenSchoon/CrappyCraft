@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_MAP_CHUNK_BULK_H
-#define 
+#define SC_PLAY_MAP_CHUNK_BULK_H
 
 #include Packet.h
 

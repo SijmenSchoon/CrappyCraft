@@ -1,6 +1,5 @@
-
 #ifndef SC_PLAY_PLAYER_POSITION_AND_LOOK_H
-#define 
+#define SC_PLAY_PLAYER_POSITION_AND_LOOK_H
 
 #include Packet.h
 

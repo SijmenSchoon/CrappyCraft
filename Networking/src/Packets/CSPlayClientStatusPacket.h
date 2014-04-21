@@ -1,6 +1,5 @@
-
 #ifndef CS_PLAY_CLIENT_STATUS_H
-#define 
+#define CS_PLAY_CLIENT_STATUS_H
 
 #include Packet.h
 
