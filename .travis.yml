@@ -1,11 +1,24 @@
-language: c++
-
-compiler:
-    - g++
+language: cpp
+script: cmake
+compiler: gcc
 
 before_install:
     - sudo apt-get update
 
 install:
-    - sudo apt-get install libboost-all-dev libssl-dev
-    - sh get_glfw3.sh
+    - sudo apt-get install libboost-all-dev libssl-dev xorg-dev
+    - git clone --depth 5 https://github.com/glfw/glfw.git
+    - cd glfw
+    - cmake -G "Unix Makefiles"
+    - make
+    - sudo make install
+    - cd ..
+    - rm -rf glfw
+
+notifications:
+    irc:
+        channels:
+            - "irc.freenode.net#tridevs"
+            - "irc.freenode.net#crappycraft"
+        on_success: always
+        on_failure: always

@@ -72,21 +72,21 @@ void CrappyCraftLauncher::LaunchCrappyCraft()
     case -1: // Error
         LOG_ERROR("Error during fork()");
         exit(1);
-        
+
     case 0: // Child process
         // Execute the program
-        execl("/usr/bin/gimp", NULL);
+        //execl("/usr/bin/gimp", NULL);
         LOG_ERROR("Error while trying to execute CrappyCraft");
         exit(1);
-        
+
     default: // Parent process
         std::cout << "Process created with pid " << pid << std::endl;
-        
+
         // Wait for the process to complete
         int status;
         while (!WIFEXITED(status))
             waitpid(pid, &status, 0);
-            
+
         std::cout << "Process exited with " << WEXITSTATUS(status) << std::endl;
     }
 #endif
