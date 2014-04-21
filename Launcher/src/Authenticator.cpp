@@ -17,7 +17,7 @@ AuthenticateResult Authenticator::Authenticate(std::string username, std::string
     pTree.put("agent.name", mcAgentName);
     pTree.put("agent.version", mcAgentVersion);
     pTree.put("username", username);
-    pTree.put("password", passwordERROR);
+    pTree.put("password", password);
 
 #ifdef _DEBUG
     // When debugging, output the ptree
