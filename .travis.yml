@@ -1,5 +1,5 @@
 language: cpp
-script: cmake
+script: "cmake -G 'Unix Makefiles' && make"
 compiler: gcc
 
 before_install:
@@ -9,11 +9,8 @@ install:
     - sudo apt-get install libboost-all-dev libssl-dev xorg-dev
     - git clone --depth 5 https://github.com/glfw/glfw.git
     - cd glfw
-    - cmake -G "Unix Makefiles"
-    - make
-    - sudo make install
+    - "cmake -G 'Unix Makefiles' && make && sudo make install"
     - cd ..
-    - rm -rf glfw
 
 notifications:
     irc:
