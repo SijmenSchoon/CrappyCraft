@@ -2,7 +2,10 @@
 #define PACKET_H
 
 #include <boost/asio/streambuf.hpp>
+#include <cstdint>
+#include <string>
 #include "PacketType.h"
+#include "../VarInt.h"
 
 namespace Networking
 {
