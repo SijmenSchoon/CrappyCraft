@@ -13,7 +13,7 @@ namespace Networking
         public:
             Packet();
             Packet(PacketType type);
-            Packet(boost::asio::streambuf buffer)
+            Packet(boost::asio::streambuf buffer);
             ~Packet();
 
             PacketType mType;

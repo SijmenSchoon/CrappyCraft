@@ -7,6 +7,6 @@ find_package(Boost COMPONENTS system regex REQUIRED)
 
 add_library(CrappyCraftNetworking STATIC)
 
-target_link_libraries(CrappyCraftLauncher ${OPENSSL_LIBRARIES})
-target_link_libraries(CrappyCraftLauncher ${Boost_LIBRARIES})
-target_link_libraries(CrappyCraftLauncher ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(CrappyCraftNetworking ${OPENSSL_LIBRARIES})
+target_link_libraries(CrappyCraftNetworking ${Boost_LIBRARIES})
+target_link_libraries(CrappyCraftNetworking ${CMAKE_THREAD_LIBS_INIT})

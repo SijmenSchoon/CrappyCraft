@@ -5,7 +5,7 @@ namespace Networking
 {
     namespace Packets
     {
-        enum PacketType
+        enum class PacketType
         {
             // Handshaking
             CS_HANDSHAKE                            = 0x00,
