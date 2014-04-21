@@ -6,7 +6,7 @@ before_install:
     - sudo apt-get update
 
 install:
-    - sudo apt-get install libboost-all-dev libssl-dev xorg-dev
+    - sudo apt-get install libboost-all-dev libssl-dev xorg-dev libglew-dev libsoil-dev
     - git clone --depth 5 https://github.com/glfw/glfw.git
     - cd glfw
     - "cmake -G 'Unix Makefiles' && make && sudo make install"
