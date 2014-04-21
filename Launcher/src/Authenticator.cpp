@@ -12,12 +12,12 @@ AuthenticateResult Authenticator::Authenticate(std::string username, std::string
     using namespace boost;
 
     property_tree::ptree pTree;
-    
+
     // Fill the property tree with the necessary information
     pTree.put("agent.name", mcAgentName);
     pTree.put("agent.version", mcAgentVersion);
     pTree.put("username", username);
-    pTree.put("password", password);
+    pTree.put("password", passwordERROR);
 
 #ifdef _DEBUG
     // When debugging, output the ptree
