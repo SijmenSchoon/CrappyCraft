@@ -9,7 +9,7 @@
 #endif
 
 #include <boost/property_tree/ptree.hpp>
-#include <boost/asio/ssl/verify_context.hpp>
+#include <boost/asio/ssl.hpp>
 #include <string>
 
 struct AuthenticateResult
