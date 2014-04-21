@@ -6,8 +6,7 @@
 # include <WinSock2.h>
 #endif
 
-#include <boost/asio/ssl/verify_context.hpp>
-#include <boost/asio/ssl/stream.hpp>
+#include <boost/asio/ssl.hpp>
 #include <boost/asio/ip/tcp.hpp>
 #include <boost/asio/streambuf.hpp>
 #include <boost/system/error_code.hpp>
