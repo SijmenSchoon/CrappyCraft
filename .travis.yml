@@ -19,7 +19,7 @@ install:
     - cd ..
     # Install boost
     - cd boost_1_55_0
-    - './bootstrap.sh --with-libraries=system,thread'
+    - './bootstrap.sh --with-libraries=system,thread,regex'
     - ./b2
     - sudo ./b2 install -d0
     - cd ..
