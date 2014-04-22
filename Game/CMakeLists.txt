@@ -15,6 +15,7 @@ add_executable(CrappyCraft src/CrappyCraft.cpp)
 
 target_link_libraries(CrappyCraft ${CMAKE_SOURCE_DIR}/lib/libCrappyCraftGraphics.a)
 target_link_libraries(CrappyCraft ${GLFW_STATIC_LIBRARIES})
+message("Static libraries: ${GLFW_STATIC_LIBRARIES}")
 target_link_libraries(CrappyCraft ${OPENGL_LIBRARIES})
 target_link_libraries(CrappyCraft ${GLEW_LIBRARIES})
 target_link_libraries(CrappyCraft ${SOIL_LIBRARIES})
