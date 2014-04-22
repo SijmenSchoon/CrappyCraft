@@ -11,7 +11,7 @@ before_install:
     - tar xzf boost_1_55_0.tar.gz
 
 install:
-    - sudo apt-get install -qq libboost-all-dev libssl-dev xorg-dev libglew-dev libsoil-dev g++-4.8
+    - sudo apt-get install -qq libssl-dev xorg-dev libglew-dev libsoil-dev g++-4.8
     - export CXX="g++-4.8"
     # Install GLFW
     - cd glfw
@@ -21,7 +21,7 @@ install:
     - cd boost_1_55_0
     - './bootstrap.sh --with-libraries=system,thread'
     - ./b2
-    - sudo ./b2 install
+    - sudo ./b2 install -d0
     - cd ..
 
 script:
