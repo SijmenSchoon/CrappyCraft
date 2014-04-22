@@ -4,13 +4,24 @@ compiler: gcc
 before_install:
     - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
     - sudo apt-get update -qq
+    # Get GLFW
     - git clone --depth 1 https://github.com/glfw/glfw.git
+    # Get Boost
+    - wget http://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.gz
+    - tar xzf boost_1_55_0.tar.gz
 
 install:
     - sudo apt-get install -qq libboost-all-dev libssl-dev xorg-dev libglew-dev libsoil-dev g++-4.8
     - export CXX="g++-4.8"
+    # Install GLFW
     - cd glfw
-    - "cmake -G 'Unix Makefiles' && make && sudo make install" # glfw
+    - "cmake -G 'Unix Makefiles' && make && sudo make install"
+    - cd ..
+    # Install boost
+    - cd boost_1_55_0
+    - './bootstrap.sh --with-libraries=system,thread'
+    - ./b2
+    - sudo ./b2 install
     - cd ..
 
 script:
