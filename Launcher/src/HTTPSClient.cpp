@@ -10,7 +10,7 @@
 
 using namespace boost::asio;
 
-HTTPSClient::HTTPSClient() : mResponseStream(&mResponse)
+Launcher::HTTPSClient::HTTPSClient() : mResponseStream(&mResponse)
 {
     ssl::context context(ssl::context::sslv23);
     context.set_verify_mode(ssl::verify_peer);
@@ -19,8 +19,8 @@ HTTPSClient::HTTPSClient() : mResponseStream(&mResponse)
     mpSSLSocket = new ssl::stream<ip::tcp::socket>(mIOService, context);
 }
 
-HTTPSResult HTTPSClient::SendHTTPSRequest(const boost::property_tree::ptree &crPTree,
-    const std::string cHost, const std::string cURI)
+Launcher::HTTPSResult Launcher::HTTPSClient::SendHTTPSRequest(
+    const boost::property_tree::ptree &crPTree, const std::string cHost, const std::string cURI)
 {
     LOG_DEBUG("Resolving " + cHost);
     mPTreeRequest = crPTree;
@@ -34,9 +34,9 @@ HTTPSResult HTTPSClient::SendHTTPSRequest(const boost::property_tree::ptree &crP
         // Resolve the host
         ip::tcp::resolver tcpResolver(mIOService);
         ip::tcp::resolver::query tcpResolverQuery(cHost, "https");
-        tcpResolver.async_resolve(tcpResolverQuery, boost::bind(&HTTPSClient::HandleResolve, this, 
+        tcpResolver.async_resolve(tcpResolverQuery, boost::bind(&HTTPSClient::HandleResolve, this,
             placeholders::error, placeholders::iterator));
-        
+
         mIOService.run();
         LOG_DEBUG("mIOService returned");
     }
@@ -54,7 +54,7 @@ HTTPSResult HTTPSClient::SendHTTPSRequest(const boost::property_tree::ptree &crP
     return mHTTPSResult;
 }
 
-void HTTPSClient::HandleResolve(const boost::system::error_code &crError,
+void Launcher::HTTPSClient::HandleResolve(const boost::system::error_code &crError,
     const ip::tcp::resolver::iterator &criEndpoints)
 {
     if (crError)
@@ -69,7 +69,7 @@ void HTTPSClient::HandleResolve(const boost::system::error_code &crError,
         boost::bind(&HTTPSClient::HandleConnect, this, placeholders::error));
 }
 
-void HTTPSClient::HandleConnect(const boost::system::error_code &crError)
+void Launcher::HTTPSClient::HandleConnect(const boost::system::error_code &crError)
 {
     if (crError)
     {
@@ -90,11 +90,11 @@ void HTTPSClient::HandleConnect(const boost::system::error_code &crError)
 
     // Perform a handshake
     LOG_DEBUG("Performing SSL handshake");
-    mpSSLSocket->async_handshake(ssl::stream_base::client, 
+    mpSSLSocket->async_handshake(ssl::stream_base::client,
         boost::bind(&HTTPSClient::HandleHandshake, this, placeholders::error));
 }
 
-void HTTPSClient::HandleHandshake(const boost::system::error_code &crError)
+void Launcher::HTTPSClient::HandleHandshake(const boost::system::error_code &crError)
 {
     if (crError)
     {
@@ -122,11 +122,11 @@ void HTTPSClient::HandleHandshake(const boost::system::error_code &crError)
         "\r\n" + result;
 
     LOG_DEBUG("Sending request");
-    async_write(*mpSSLSocket, buffer(requestString), 
+    async_write(*mpSSLSocket, buffer(requestString),
         boost::bind(&HTTPSClient::HandleWrite, this, placeholders::error));
 }
 
-void HTTPSClient::HandleWrite(const boost::system::error_code &crError)
+void Launcher::HTTPSClient::HandleWrite(const boost::system::error_code &crError)
 {
     if (crError)
     {
@@ -138,12 +138,12 @@ void HTTPSClient::HandleWrite(const boost::system::error_code &crError)
     LOG_DEBUG("Request sent");
 
     // Read the response
-    async_read_until(*mpSSLSocket, mResponse, "\r\n", 
+    async_read_until(*mpSSLSocket, mResponse, "\r\n",
         boost::bind(&HTTPSClient::HandleReadA, this, placeholders::error));
     //mIOService.run();
 }
 
-void HTTPSClient::HandleReadA(const boost::system::error_code &crError)
+void Launcher::HTTPSClient::HandleReadA(const boost::system::error_code &crError)
 {
     if (crError)
     {
@@ -181,7 +181,7 @@ void HTTPSClient::HandleReadA(const boost::system::error_code &crError)
     //mIOService.run();
 }
 
-void HTTPSClient::HandleReadB(const boost::system::error_code &crError)
+void Launcher::HTTPSClient::HandleReadB(const boost::system::error_code &crError)
 {
     LOG_DEBUG("Response header begin");
     std::string header;
@@ -191,7 +191,7 @@ void HTTPSClient::HandleReadB(const boost::system::error_code &crError)
         std::cout << header << std::endl;
 #endif
     }
-    
+
     LOG_DEBUG("Response header end");
 
     // Parse the tree

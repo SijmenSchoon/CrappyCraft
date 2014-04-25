@@ -4,7 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 
-int CrappyCraft::Main(std::vector<std::string> &arguments)
+int Game::CrappyCraft::Main(std::vector<std::string> &arguments)
 {
     try
     {
@@ -16,7 +16,7 @@ int CrappyCraft::Main(std::vector<std::string> &arguments)
         exit(EXIT_FAILURE);
     }
 
-    Graphics::Controls::Button button(1, Graphics::Vectors::Vec2d(-0.5, -0.075), 
+    Graphics::Controls::Button button(1, Graphics::Vectors::Vec2d(-0.5, -0.075),
         Graphics::Vectors::Vec2d(1.0, 0.15), "Button!");
     button.CreateVBO();
     while (!Graphics::Display::ShouldClose())
@@ -35,5 +35,5 @@ int CrappyCraft::Main(std::vector<std::string> &arguments)
 int main(int argc, char **argv)
 {
     std::vector<std::string> arguments(argv, argv + argc);
-    return CrappyCraft().Main(arguments);
+    return Game::CrappyCraft().Main(arguments);
 }

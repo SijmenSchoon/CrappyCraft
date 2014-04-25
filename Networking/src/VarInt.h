@@ -3,14 +3,17 @@
 
 #include <vector>
 
-class VarInt
+namespace Networking
 {
-public:
-    VarInt();
-    VarInt(char *data);
-    ~VarInt();
+    class VarInt
+    {
+    public:
+        VarInt();
+        VarInt(char *data);
+        ~VarInt();
 
-    std::vector<char> mData;
-};
+        std::vector<char> mData;
+    };
+}
 
 #endif

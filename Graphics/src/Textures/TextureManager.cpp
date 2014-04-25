@@ -1,7 +1,7 @@
 #include "TextureManager.h"
 #include <algorithm>
 
-Graphics::Textures::Texture &TextureManager::Get(std::string tex)
+Graphics::Textures::Texture &Graphics::Textures::TextureManager::Get(std::string tex)
 {
     Graphics::Textures::Texture &texture = msTextures[tex];
 

@@ -13,7 +13,7 @@
 # include <sys/wait.h>
 #endif
 
-int CrappyCraftLauncher::Main(std::vector<std::string> &arguments)
+int Launcher::CrappyCraftLauncher::Main(std::vector<std::string> &arguments)
 {
     if (arguments.size() != 3)
     {
@@ -42,7 +42,7 @@ int CrappyCraftLauncher::Main(std::vector<std::string> &arguments)
 }
 
 
-void CrappyCraftLauncher::LaunchCrappyCraft()
+void Launcher::CrappyCraftLauncher::LaunchCrappyCraft()
 {
 #ifdef _WIN32
     STARTUPINFO si;
@@ -95,5 +95,5 @@ void CrappyCraftLauncher::LaunchCrappyCraft()
 int main(int argc, char **argv)
 {
     std::vector<std::string> arguments(argv, argv + argc);
-    return CrappyCraftLauncher().Main(arguments);
+    return Launcher::CrappyCraftLauncher().Main(arguments);
 }

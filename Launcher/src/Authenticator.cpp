@@ -7,7 +7,8 @@
 #include <boost/lexical_cast.hpp>
 #include <sstream>
 
-AuthenticateResult Authenticator::Authenticate(std::string username, std::string password)
+Launcher::AuthenticateResult Launcher::Authenticator::Authenticate(std::string username,
+    std::string password)
 {
     using namespace boost;
 

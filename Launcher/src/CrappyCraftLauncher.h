@@ -4,12 +4,15 @@
 #include <vector>
 #include <string>
 
-class CrappyCraftLauncher
+namespace Launcher
 {
-public:
-    int Main(std::vector<std::string> &arguments);
+    class CrappyCraftLauncher
+    {
+    public:
+        int Main(std::vector<std::string> &arguments);
 
-    void LaunchCrappyCraft();
-};
+        void LaunchCrappyCraft();
+    };
+}
 
 #endif // _CRAPPYCRAFTLAUNCHER_H

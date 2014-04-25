@@ -4,13 +4,19 @@
 #include "Texture.h"
 #include <unordered_map>
 
-class TextureManager
+namespace Graphics
 {
-public:
-    static Graphics::Textures::Texture &Get(std::string tex);
+    namespace Textures
+    {
+        class TextureManager
+        {
+        public:
+            static Graphics::Textures::Texture &Get(std::string tex);
 
-private:
-    static std::unordered_map<std::string, Graphics::Textures::Texture> msTextures;
-};
+        private:
+            static std::unordered_map<std::string, Graphics::Textures::Texture> msTextures;
+        };
+    }
+}
 
 #endif
