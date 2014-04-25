@@ -25,7 +25,7 @@ namespace Networking
                 SPEED = 1,
 
                 /// <summary>
-                ///     Contracts FOV< decreases walking speed by 15% with each level.
+                ///     Contracts FOV, decreases walking speed by 15% with each level.
                 /// </summary>
                 SLOWNESS = 2,
 
@@ -119,7 +119,7 @@ namespace Networking
 
                 /// <summary>
                 ///     Does 1 HP damage every 25/[level] ticks (rounding down) until the mob is at
-                //      1 HP. The health bar turns yellow-green.
+                ///     1 HP. The health bar turns yellow-green.
                 /// </summary>
                 POISON = 19,
 
